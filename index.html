@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>JOQUEMPÔ</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="winner-title">Indefinido!</h1>
+        <div class="scoreboard-box">
+            <span class="player-name">Jogador 1</span>
+            <span class="score" id="score-1">00</span>
+            <span class="score-separator">VS</span>
+            <span class="score" id="score-2">00</span>
+            <span class="player-name">Jogador 2</span>
+        </div>
+    </header>
+
+    <main class="battle-field">
+        <div class="button-move-wrapper">
+            <button class="button-move button-move-stone-1">Pedra</button>
+            <button class="button-move button-move-paper-1">Papel</button>
+            <button class="button-move button-move-scissors-1">Tesoura</button>
+        </div>
+        <div class="board">
+            <div class="move-box" id="move-Box-1"></div>
+            <span class="move-box-separator">VS</span>
+            <div class="move-box " id="move-Box-2"></div>
+        </div>
+        <div class="button-move-wrapper">
+            <button class="button-move button-move-stone-2">Pedra</button>
+            <button class="button-move button-move-paper-2">Papel</button>
+            <button class="button-move button-move-scissors-2">Tesoura</button>
+        </div>
+    </main>
+
+    <footer class="config-box">
+        <button class="button-move button-start started ">Iniciar</button>
+        <button class="button-move button-reset">Resetar</button>
+    </footer>
+    <script src="index.js"></script>
+
+</body>
+</html>
